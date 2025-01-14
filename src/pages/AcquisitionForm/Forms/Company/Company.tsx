@@ -86,7 +86,7 @@ export const Company: React.FC = () => {
         <S.Form.Control
           id="cnpj"
           name="cnpj"
-          type="text"
+          type="number"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.cnpj}
