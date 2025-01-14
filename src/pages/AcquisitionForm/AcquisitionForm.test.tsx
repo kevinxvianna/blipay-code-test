@@ -40,7 +40,9 @@ describe('AcquisitionForm', () => {
     expect(
       screen.getByRole('textbox', { name: /Nome completo/i }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('textbox', { name: /CPF/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('spinbutton', { name: /CPF/i }),
+    ).toBeInTheDocument();
     expect(
       screen.getByRole('textbox', { name: /Cidade/i }),
     ).toBeInTheDocument();
@@ -92,7 +94,9 @@ describe('AcquisitionForm', () => {
     expect(
       screen.getByRole('textbox', { name: /Cidade/i }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('textbox', { name: /CNPJ/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('spinbutton', { name: /CNPJ/i }),
+    ).toBeInTheDocument();
   });
 
   it('renders SimulationResult when simulation data is available', () => {

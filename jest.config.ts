@@ -1,6 +1,6 @@
 export default {
   testEnvironment: 'jest-fixed-jsdom',
-  setupFilesAfterEnv: ['<rootDir>/setupTests.ts', '<rootDir>/setEnvVars.js'],
+  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
   transform: {
     '^.+\\.(t|j)sx?$': [
       '@swc/jest',
